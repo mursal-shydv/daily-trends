@@ -1,0 +1,42 @@
+{
+  "name": "muchosol-daily-trends",
+  "version": "1.0.0",
+  "description": "Technical challenge for Muchosol",
+  "main": "app.ts",
+  "scripts": {
+    "start": "ts-node server.ts",
+    "dev": "nodemon server.ts",
+    "worker": "ts-node workers/scrape.worker.ts",
+    "test": "jest"
+  },
+  "author": "Mursal <mursal.shydv@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "4.17.18",
+    "@types/mongoose": "5.11.97",
+    "@types/node": "20.8.2",
+    "@types/redis": "4.0.11",
+    "axios": "1.5.1",
+    "cors": "2.8.5",
+    "express": "4.18.2",
+    "ioredis": "5.3.2",
+    "mongoose": "7.5.3",
+    "node-cron": "3.0.2",
+    "redis": "4.6.10",
+    "reflect-metadata": "0.1.13",
+    "routing-controllers": "0.10.4",
+    "typedi": "0.10.0",
+    "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "@types/cors": "2.8.14",
+    "@types/node-cron": "3.0.9",
+    "dotenv": "16.3.1",
+    "eslint": "8.50.0",
+    "jest": "29.7.0",
+    "nodemon": "3.0.1",
+    "prettier": "3.0.3",
+    "supertest": "6.3.3",
+    "ts-node": "10.9.1"
+  }
+}
