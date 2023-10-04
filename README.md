@@ -57,9 +57,9 @@ the data. Currently i have set the worker for 1 minute but it needs to be just o
 
 ## Potential Improvements:
 
-Configuration handling with ARG and ENV inside dockerfile instead of static from .env file
-Better logging with libraries like Winston
-Yaml pipeline for CI/CD
-Custom error handling with custom errors functions and middlewares
-Worker threads for parallelism
-More unit tests and integration tests
+- **Configuration Handling**: Utilize `ARG` and `ENV` in Dockerfile instead of static sourcing from `.env` file.
+- **Logging**: Adopt advanced logging with libraries like `Winston`.
+- **CI/CD**: Implement a YAML pipeline for CI/CD.
+- **Error Handling**: Establish better custom error handling using specific error functions and middleware.
+- **Performance**: Utilize worker threads for parallelism.
+- **Testing**: Increase unit tests and add integration tests.
