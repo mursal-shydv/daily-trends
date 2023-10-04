@@ -1,7 +1,8 @@
+import type { RedisClientType } from 'redis';
 export class RedisService {
   private client;
 
-  constructor(redisClient: any) {
+  constructor(redisClient: RedisClientType) {
     this.client = redisClient;
   }
 

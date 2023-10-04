@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feeds</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f4;
+        }
+        .feed-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .feed {
+            border-bottom: 1px solid #eaeaea;
+            padding: 10px 0;
+        }
+        .feed:last-child {
+            border-bottom: none;
+        }
+        .feed-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .feed-description {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .feed-author, .feed-location {
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="feed-container">
+        <% feeds.forEach(feed => { %>
+            <div class="feed">
+                <div class="feed-title"><%= feed.title %></div>
+                <div class="feed-description"><%= feed.description %></div>
+                <div class="feed-author">Author: <%= feed.author %></div>
+                <div class="feed-location">Location: <%= feed.location %></div>
+            </div>
+        <% }) %>
+    </div>
+</body>
+</html>
