@@ -25,6 +25,8 @@ const scheduleScraping = (): void => {
 
       await redisService.set(CACHE.FEED, JSON.stringify(allFeeds), 86400);
 
+      console.log('Worker scraped and saved 5 news ...');
+
     } catch (error) {
       console.error('Error during scraping:', error);
     }

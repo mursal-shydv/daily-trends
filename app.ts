@@ -1,4 +1,3 @@
-import cors from 'cors';
 import path from 'path';
 import bodyParser from 'body-parser';
 import swaggerUi from 'swagger-ui-express';
@@ -26,7 +25,6 @@ app.use('/docs', swaggerUi.serve, swaggerUi.setup(spec));
 app.set('views', path.join(__dirname, 'src/views'));
 app.set('view engine', 'ejs');
 
-// app.use(cors());
 app.use(bodyParser.json());
 
 //eslint-disable-next-line @typescript-eslint/no-unused-vars

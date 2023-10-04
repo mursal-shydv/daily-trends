@@ -9,9 +9,11 @@ import { CACHE } from '../constants';
  */
 export class FeedService {
   private readonly newsScraperService: NewsScraperService;
+  private readonly redisService: RedisService;
 
-  constructor(private readonly redisService: RedisService) {
+  constructor() {
     this.newsScraperService = Container.get(NewsScraperService);
+    this.redisService = Container.get(RedisService);
   }
 
   /**

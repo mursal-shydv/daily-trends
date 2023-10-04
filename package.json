@@ -6,7 +6,6 @@
   "scripts": {
     "start": "ts-node server.ts",
     "dev": "nodemon server.ts",
-    "worker": "ts-node workers/scrape.worker.ts",
     "test": "jest"
   },
   "author": "Mursal <mursal.shydv@gmail.com>",
@@ -34,7 +33,9 @@
   },
   "devDependencies": {
     "@types/cors": "2.8.14",
+    "@types/jest": "29.5.5",
     "@types/node-cron": "3.0.9",
+    "@types/supertest": "2.0.14",
     "@types/swagger-ui-express": "4.1.4",
     "@typescript-eslint/eslint-plugin": "6.7.4",
     "@typescript-eslint/parser": "6.7.4",
@@ -44,6 +45,11 @@
     "nodemon": "3.0.1",
     "prettier": "3.0.3",
     "supertest": "6.3.3",
+    "ts-jest": "29.1.1",
     "ts-node": "10.9.1"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
   }
 }

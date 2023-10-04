@@ -15,7 +15,7 @@ const bootstrap = async (): Promise<void> => {
     const newsScraperService = new NewsScraperService();
     Container.set(NewsScraperService, newsScraperService);
 
-    const feedService = new FeedService(redisService);
+    const feedService = new FeedService();
     Container.set(FeedService, feedService);
 
   } catch (error) {
